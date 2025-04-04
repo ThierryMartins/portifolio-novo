@@ -6,6 +6,7 @@
 
 body {
     background-color: black;
+    color: white;
 }
 .menu-about {
     background-color: black;
@@ -68,11 +69,11 @@ body {
 
 .text-inicial{
     color: white;
-    
+
 }
 
 .tituloInicial {
-    margin: 5em 0em 5em 40px;
+    margin: 5em 0em 3em 40px;
     font-size: x-large;
     color: white;
 }
@@ -159,44 +160,91 @@ body {
     transform: scale(0.9);
 }
 
-.contenier-about{
-    margin-right: 320px;
-    font-family: "Open Sans", sans-serif;
-    font-size: medium;
-    clear: both;
-    display: flex;
-    margin-top: 130px;
-    margin-bottom: 40px;
+.contenier-article{
     float: right;
     justify-content: center;
     align-items: center;
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-right: 60px;
+    text-align: center;
+    font-size: 0.9em;
+    color: white;
 }
 
-.title-about{ 
-    margin-right: -100px;
+.contenier-about{
+    
+    font-family: "Open Sans", sans-serif;
     font-size: 2em;
-}
-
-.parte_azul{
-    color: #004AAD;
+    clear: both; 
+    margin-top: 130px;
+   margin-bottom: 40px;
 }
 
 .contenier-p{
     font-family: "Roboto", sans-serif;
     font-size: larger;
     clear: both;
-    margin-top: 20px;
-    margin-right: 180px;
-    display: block;
-    text-align: center;
-    float: right;
-    font-size: 0.9em;
+}
+
+.contenier-p span{
+    color: #004AAD;
+}
+
+.parte_azul{
+    color: #004AAD;
 }
 
 .thierry-about{
     margin-left: 140px;
-    margin-top: 8em;
+    margin-top: 10.5em;
     width: 350px;
+}
+
+.contenier-habilidades{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 4em;
+    justify-content: center;
+    margin-top: 8em;
+}
+
+.contenier-habilidades img{
+    width: 3em;
+}
+
+.contenier-habilidades div{
+    background-color: rgb(163, 163, 163);
+    padding: 5em;
+}
+
+.section-projetos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20em auto 20em auto;
+}
+
+.section-projetos img{
+    width: 10em; 
+}
+
+.section-projetos h4{
+    font-size: 2em;
+}
+
+
+footer img {
+    width: 25px;
+}
+
+.contenier-footer{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 30em;
 }
 
 @keyframes gradientColor {
@@ -216,7 +264,7 @@ body {
 
 .mailto-about{
     font-weight: bolder;
-    margin-left: 30px;
+    margin-left: 1em;
     font-family: "Ruda", sans-serif;
     text-decoration: none;
     font-size: x-large;
@@ -226,20 +274,79 @@ body {
     animation: gradientColor 4s infinite;
 }
 
-footer{
-    margin-top: 900px;
-}
-
-footer img {
-    width: 25px;
-}
-
 .credits-about{
     display: flex;
-    justify-content: center;
     color: white;
-    margin-top: 20px;
-    margin-left: 35px;
+    margin-top: 1em;
+    margin-left: 1em;
     font-family: "Ruda", sans-serif;
     font-size: large;
+}
+
+.contenier-botoes-footer{
+    display: flex;
+    justify-content: right;
+    margin-bottom: 2em;
+    gap: 20px;  
+}
+
+.img-linkedin-footer {
+    width: 2em;
+}
+
+.img-github-footer{
+    width: 2em;
+}
+
+
+.icon-resume-footer {
+    width: 30px;
+    margin-right: 5px;
+}
+
+.resume-class-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7em;
+    font-family: 'Bree Serif', serif;
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 99px;
+    background-color: white;
+    white-space: nowrap;
+    transition: 0.45s ease;
+}
+
+.resume-class-footer:hover{
+    transform: scale(0.9);
+}
+
+.linkedin-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 1.1em;
+    border-radius: 50%;
+    transition: 0.45s ease;
+}
+
+.linkedin-footer:hover{
+    transform: scale(0.9);
+}
+
+.github-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 1em;
+    border-radius: 50%;
+    transition: 0.45s ease;
+}
+
+.github-footer:hover{
+    transform: scale(0.9);
 }
